@@ -1,0 +1,74 @@
+/* Styles for the video container */
+.video-container {
+    max-width: 800px;
+    /* Adjust this width as needed */
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Styles for the video input and buttons */
+.video-input {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#embedCodeInput {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#embedButton,
+#restoreLastButton {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#embedButton:hover,
+#restoreLastButton:hover {
+    background-color: #0056b3;
+}
+
+/* Styles for the video list */
+.video-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.video-item {
+    flex-basis: calc(50% - 10px);
+    padding: 10px;
+    background-color: #f7f7f7;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.remove-button {
+    padding: 5px 10px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 18px;
+}
+
+.remove-button:hover {
+    background-color: #c82333;
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+    .video-item {
+      flex-basis: 100%;
+    }
+  }
